@@ -30,7 +30,7 @@ public class EmployeeService implements EmployeeRepository {
     int uniqueId = 7;
 
     @Override
-    public ArrayList<Employee> getEmployee() {
+    public ArrayList<Employee> getEmployees() {
         Collection<Employee> employeeCollection = employeeList.values();
         ArrayList<Employee> employees = new ArrayList<>(employeeCollection);
 
