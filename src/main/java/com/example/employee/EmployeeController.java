@@ -20,7 +20,7 @@ public class EmployeeController {
         return employeeService.getEmployeeById(employeeId);
     }
 
-    @PostMapping("/employees/{employeeId}")
+    @PostMapping("/employees")
 
     public Employee addEmployee(@RequestBody Employee employee) {
         return employeeService.addEmployee(employee);
@@ -32,7 +32,7 @@ public class EmployeeController {
         return employeeService.updateEmployee(employeeId, employee);
     }
 
-    @DeleteMapping("/employee/{emplyeeId}")
+    @DeleteMapping("/employees/{emplyeeId}")
     public void deleteEmployee(@PathVariable int employeeId) {
         employeeService.deleteEmployee(employeeId);
     }
